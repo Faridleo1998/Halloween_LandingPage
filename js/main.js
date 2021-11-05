@@ -94,3 +94,16 @@ const scrollUp = () => {
 }
 
 window.addEventListener('scroll', scrollUp);
+
+/* Scroll Reveal Animation */
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '90px',
+    duration: 2500,
+    delay: 400
+})
+
+sr.reveal('.home-swiper, .new-swiper, .newsletter__container');
+sr.reveal('.category__data, .trick__content, .footer__content', { interval: 200 });
+sr.reveal('.about__data, .discount__img, .footer__img-two', { origin: 'left' });
+sr.reveal('.about__img, .discount__data, .footer__img-one', { origin: 'right' });
